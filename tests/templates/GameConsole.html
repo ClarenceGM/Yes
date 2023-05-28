@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Game Console Search</title>
+</head>
+
+<body>
+      <h1>Game Information</h1>
+      <p>This page is to inform you about a Nintendo Console.</p>
+      {% if game %}
+      <p>You asked for information on {{ Game['name'] }}. This console was made in
+      {{ game['year'] }}  and sold {{ game['sold'] }}.</p>
+      {% endif %}
+      <form action="/" method="GET">
+          <label>
+              Enter the name of a console here:
+              <input type="text" name="lookup_name">
+          </label>
+      <input type="submit" value="Look up!">
+      </form>
+      <p>{{ output }}</p>
+WHY DOES THIS SHOW
+
+    </body>
+</html>
